@@ -1,4 +1,6 @@
 package com.hangrycoder.simpledaggerapp
 
-class Wheels {
+import javax.inject.Inject
+
+class Wheels @Inject constructor() {
 }

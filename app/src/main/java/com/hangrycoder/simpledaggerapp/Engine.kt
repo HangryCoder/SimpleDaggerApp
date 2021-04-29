@@ -1,4 +1,6 @@
 package com.hangrycoder.simpledaggerapp
 
-class Engine {
+import javax.inject.Inject
+
+class Engine @Inject constructor() {
 }
