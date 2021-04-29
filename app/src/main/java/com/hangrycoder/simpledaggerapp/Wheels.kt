@@ -1,6 +1,5 @@
 package com.hangrycoder.simpledaggerapp
 
-import javax.inject.Inject
-
-class Wheels @Inject constructor() {
+//We don't own this class. So we cannot annotate it with @Inject
+class Wheels(val rims: Rims, val tires: Tires) {
 }
