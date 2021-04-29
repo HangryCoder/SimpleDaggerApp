@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val carComponent = DaggerCarComponent.create()
         carComponent.inject(this)
-
+        
         car.drive()
     }
 }
