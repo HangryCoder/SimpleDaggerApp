@@ -1,11 +1,10 @@
 package com.hangrycoder.simpledaggerapp
 
-class Car {
+import android.util.Log
 
-    val engine: Engine = Engine()
-    val wheels: Wheels = Wheels()
+class Car(val engine: Engine, val wheels: Wheels) {
 
     fun drive() {
-
+        Log.d("TAG", "drive")
     }
 }
