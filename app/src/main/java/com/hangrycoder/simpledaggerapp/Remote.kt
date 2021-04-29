@@ -10,7 +10,7 @@ class Remote @Inject constructor() {
     }
 
     fun setListener(car: Car) {
-        Log.d(TAG, "setListener: $car")
+        Log.d(TAG, "Remote connected")
     }
 
 }
