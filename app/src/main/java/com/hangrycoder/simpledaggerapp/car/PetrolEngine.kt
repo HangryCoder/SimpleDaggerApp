@@ -11,6 +11,6 @@ class PetrolEngine @Inject constructor(
     private val TAG = "Car"
 
     override fun start() {
-        Log.d(TAG, "Petrol Engine started horsePower: $horsePower engineCapacity: $engineCapacity")
+        Log.d(TAG, "Petrol Engine started\nHorsePower: $horsePower\nEngineCapacity: $engineCapacity")
     }
 }
