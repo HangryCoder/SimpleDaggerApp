@@ -3,7 +3,7 @@ package com.hangrycoder.simpledaggerapp.car
 import android.util.Log
 import javax.inject.Inject
 
-class DieselEngine(private val horsePower: Int) :
+class DieselEngine @Inject constructor(private val horsePower: Int) :
     Engine {
     private val TAG = "Car"
 

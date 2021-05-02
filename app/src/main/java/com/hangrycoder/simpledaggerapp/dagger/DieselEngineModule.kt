@@ -10,7 +10,12 @@ import javax.inject.Inject
 class DieselEngineModule @Inject constructor(private val horsePower: Int) {
 
     @Provides
-    fun providesEngine(): Engine {
-        return DieselEngine(horsePower)
+    fun providesHorsePower(): Int {
+        return horsePower
+    }
+
+    @Provides
+    fun providesEngine(engine: DieselEngine): Engine {
+        return engine
     }
 }
