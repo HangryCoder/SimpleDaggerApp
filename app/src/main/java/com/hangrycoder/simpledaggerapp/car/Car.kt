@@ -16,6 +16,6 @@ class Car @Inject constructor(val engine: Engine, val wheels: Wheels, val driver
 
     fun drive() {
         engine.start()
-        Log.d(TAG, "Driving")
+        Log.d(TAG, "$driver drives $this")
     }
 }
