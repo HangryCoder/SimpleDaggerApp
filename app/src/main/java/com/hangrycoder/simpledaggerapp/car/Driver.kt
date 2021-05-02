@@ -1,8 +1,5 @@
 package com.hangrycoder.simpledaggerapp.car
 
-import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class Driver @Inject constructor() {
-}
+//We don't own this class
+class Driver
