@@ -6,8 +6,7 @@ import dagger.Module
 import javax.inject.Singleton
 
 @Singleton
-@Component
-@Module(includes = [DriverModule::class])
+@Component(modules = [DriverModule::class])
 interface AppComponent {
     fun getDriver(): Driver
 }

@@ -1,12 +1,11 @@
 package com.hangrycoder.simpledaggerapp
 
 import android.app.Application
-import com.hangrycoder.simpledaggerapp.dagger.CarComponent
-import com.hangrycoder.simpledaggerapp.dagger.DaggerCarComponent
+import com.hangrycoder.simpledaggerapp.dagger.AppComponent
 
 class SimpleDaggerApp : Application() {
 
-    private lateinit var component: CarComponent
+    private lateinit var component: AppComponent
 
     override fun onCreate() {
         super.onCreate()
