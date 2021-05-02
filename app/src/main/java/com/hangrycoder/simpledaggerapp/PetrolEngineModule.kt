@@ -1,13 +1,11 @@
 package com.hangrycoder.simpledaggerapp
 
+import dagger.Binds
 import dagger.Module
-import dagger.Provides
 
 @Module
-class PetrolEngineModule {
+abstract class PetrolEngineModule {
 
-    @Provides
-    fun providesEngine(engine: PetrolEngine): Engine {
-        return engine
-    }
+    @Binds
+    abstract fun bindEngine(engine: PetrolEngine): Engine
 }
