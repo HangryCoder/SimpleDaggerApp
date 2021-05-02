@@ -3,6 +3,7 @@ package com.hangrycoder.simpledaggerapp
 import android.app.Application
 import com.hangrycoder.simpledaggerapp.dagger.AppComponent
 import com.hangrycoder.simpledaggerapp.dagger.DaggerAppComponent
+import com.hangrycoder.simpledaggerapp.dagger.DriverModule
 
 class SimpleDaggerApp : Application() {
 
@@ -11,7 +12,7 @@ class SimpleDaggerApp : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        component = DaggerAppComponent.create()
+        component = DaggerAppComponent.factory().create(DriverModule("Sonia"))
     }
 
     fun getAppComponent() = component
