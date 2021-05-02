@@ -2,6 +2,7 @@ package com.hangrycoder.simpledaggerapp
 
 import android.app.Application
 import com.hangrycoder.simpledaggerapp.dagger.AppComponent
+import com.hangrycoder.simpledaggerapp.dagger.DaggerAppComponent
 
 class SimpleDaggerApp : Application() {
 
@@ -10,10 +11,7 @@ class SimpleDaggerApp : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        component = DaggerCarComponent.builder()
-            .horsePower(120)
-            .engineCapacity(1400)
-            .build()
+        component = DaggerAppComponent.create()
     }
 
     fun getAppComponent() = component

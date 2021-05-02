@@ -7,7 +7,10 @@ import dagger.Component
 import javax.inject.Named
 
 @PerActivity
-@Component(modules = [WheelsModule::class, PetrolEngineModule::class])
+@Component(
+    dependencies = [AppComponent::class],
+    modules = [WheelsModule::class, PetrolEngineModule::class]
+)
 interface ActivityComponent {
     fun getCar(): Car
 
@@ -21,6 +24,8 @@ interface ActivityComponent {
 
         @BindsInstance
         fun engineCapacity(@Named("engineCapacity") engineCapacity: Int): Builder
+
+        fun appComponent(component: AppComponent): Builder
 
         fun build(): ActivityComponent
     }
