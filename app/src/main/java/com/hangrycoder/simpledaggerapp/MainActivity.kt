@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val component = (application as SimpleDaggerApp).getAppComponent()
-            .getActivityComponentBuilder()
-            .horsePower(120)
-            .engineCapacity(1400)
-            .build()
-
+            .getActivityComponentFactory()
+            .create(
+                horsePower = 120,
+                engineCapacity = 1400
+            )
         component.inject(this)
 
         car1.drive()
