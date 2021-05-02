@@ -2,6 +2,8 @@ package com.hangrycoder.simpledaggerapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hangrycoder.simpledaggerapp.car.Car
+import com.hangrycoder.simpledaggerapp.dagger.DaggerCarComponent
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val carComponent = DaggerCarComponent.create()
         carComponent.inject(this)
-        
+
         car.drive()
     }
 }

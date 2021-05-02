@@ -1,5 +1,8 @@
-package com.hangrycoder.simpledaggerapp
+package com.hangrycoder.simpledaggerapp.dagger
 
+import com.hangrycoder.simpledaggerapp.car.Rims
+import com.hangrycoder.simpledaggerapp.car.Tires
+import com.hangrycoder.simpledaggerapp.car.Wheels
 import dagger.Module
 import dagger.Provides
 

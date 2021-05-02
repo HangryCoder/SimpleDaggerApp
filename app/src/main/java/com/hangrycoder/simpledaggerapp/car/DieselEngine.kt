@@ -1,9 +1,10 @@
-package com.hangrycoder.simpledaggerapp
+package com.hangrycoder.simpledaggerapp.car
 
 import android.util.Log
 import javax.inject.Inject
 
-class DieselEngine @Inject constructor() : Engine {
+class DieselEngine @Inject constructor() :
+    Engine {
     private val TAG = "Car"
 
     override fun start() {

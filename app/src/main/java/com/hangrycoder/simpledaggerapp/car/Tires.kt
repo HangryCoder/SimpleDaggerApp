@@ -1,4 +1,4 @@
-package com.hangrycoder.simpledaggerapp
+package com.hangrycoder.simpledaggerapp.car
 
 import android.util.Log
 
